@@ -1,6 +1,6 @@
 ﻿namespace Assignment_5_1_
 {
-    partial class Form1
+    partial class BMICalculator
     {
         /// <summary>
         /// Required designer variable.
@@ -56,7 +56,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(12, 128);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(139, 43);
+            this.radioButton1.Size = new System.Drawing.Size(134, 42);
             this.radioButton1.TabIndex = 1;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Inches";
@@ -67,7 +67,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(12, 177);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(141, 43);
+            this.radioButton2.Size = new System.Drawing.Size(138, 42);
             this.radioButton2.TabIndex = 2;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Metres";
@@ -76,15 +76,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(-1, 243);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(-1, 223);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 39);
+            this.label1.Size = new System.Drawing.Size(112, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "My Weight:";
             // 
             // Weight
             // 
-            this.Weight.Location = new System.Drawing.Point(181, 243);
+            this.Weight.Location = new System.Drawing.Point(4, 251);
             this.Weight.Name = "Weight";
             this.Weight.Size = new System.Drawing.Size(100, 45);
             this.Weight.TabIndex = 4;
@@ -115,10 +116,9 @@
             this.textBox2.Size = new System.Drawing.Size(100, 45);
             this.textBox2.TabIndex = 7;
             // 
-            // Form1
+            // BMICalculator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 38F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(302, 433);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.CalculateBMI);
@@ -130,9 +130,9 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "BMICalculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BMI Calculator";
             this.ResumeLayout(false);

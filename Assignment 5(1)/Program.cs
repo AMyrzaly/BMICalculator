@@ -4,6 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Name: Abubakir Myrzaly
+ * Date: 8/15/2017
+ * Description: BMI Calculator
+ * Version 0.1 - Created the Project
+ */
+
 namespace Assignment_5_1_
 {
     static class Program
@@ -16,7 +23,7 @@ namespace Assignment_5_1_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new BMICalculator());
         }
     }
 }
