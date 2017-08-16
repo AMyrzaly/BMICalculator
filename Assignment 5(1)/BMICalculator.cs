@@ -26,29 +26,98 @@ namespace Assignment_5_1_
 
         private void CalculateBMI_Click(object sender, EventArgs e)
         {
+            //initialize variables
             double result;
             double height;
             double weight;
 
             try
             {
-                height = Convert.ToDouble(heightTextBox.Text);
-                weight = Convert.ToDouble(weightTexBox.Text);
+                if (HeightTextBox.Text == "" || WeightTextBox.Text == "")
+                {
+                    MessageBox.Show("Fields can not be empty, please fill them out");
+
+                    if ((HeightTextBox.Text == "") || (HeightTextBox.Text == "" && WeightTextBox.Text == ""))
+                    {
+                        HeightTextBox.Focus();
+                    }
+                    else
+                    {
+                        WeightTextBox.Focus();
+                    }
+                }
+
+                try
+                {
+                    height = Convert.ToDouble(HeightTextBox.Text);
+                    weight = Convert.ToDouble(WeightTextBox.Text);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Please type numbers");
+                    HeightTextBox.Clear();
+                    WeightTextBox.Clear();
+                    HeightTextBox.Focus();
+                }
+
+                height = Convert.ToDouble(HeightTextBox.Text);
+                weight = Convert.ToDouble(WeightTextBox.Text);
 
                 if (imperialRadBtn.Checked == true)
                 {
                     result = ((weight * 703)) / ((height * height));
+                    ResultTextBox.Text = Convert.ToString(result);
+
+                    if (result < 18.5)
+                    {
+                        ResultInfoTextBox.Text = Convert.ToString("Underweight");
+                    }
+
+                    if ((result > 18.5) && (result < 24.9))
+                    {
+                        ResultInfoTextBox.Text = Convert.ToString("Normal");
+                    }
+
+                    if ((result > 25) && (result < 29.9))
+                    {
+                        ResultInfoTextBox.Text = Convert.ToString("Overweight");
+                    }
+
+                    if (result > 30)
+                    {
+                        ResultInfoTextBox.Text = Convert.ToString("Obese");
+                    }
                 }
                 else if (metricRadBnt.Checked == true)
                 {
                     result = (weight / (height * height));
+                    ResultTextBox.Text = Convert.ToString(result);
+
+                    if (result < 18.5)
+                    {
+                        ResultInfoTextBox.Text = Convert.ToString("Underweight");
+                    }
+
+                    if ((result > 18.5) && (result < 24.9))
+                    {
+                        ResultInfoTextBox.Text = Convert.ToString("Normal");
+                    }
+
+                    if ((result > 25) && (result < 29.9))
+                    {
+                        ResultInfoTextBox.Text = Convert.ToString("Overweight");
+                    }
+
+                    if (result > 30)
+                    {
+                        ResultInfoTextBox.Text = Convert.ToString("Obese");
+                    }
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("Press OK to coninue");
+                MessageBox.Show("Press OK");
             }
-
         }
     }
 }
