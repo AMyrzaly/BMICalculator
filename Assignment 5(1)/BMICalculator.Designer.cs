@@ -42,6 +42,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.ResultInfoTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.ClearButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.weightTexBox.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -110,7 +111,7 @@
             // CalculateBMI
             // 
             this.CalculateBMI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalculateBMI.Location = new System.Drawing.Point(53, 245);
+            this.CalculateBMI.Location = new System.Drawing.Point(27, 245);
             this.CalculateBMI.Name = "CalculateBMI";
             this.CalculateBMI.Size = new System.Drawing.Size(147, 30);
             this.CalculateBMI.TabIndex = 6;
@@ -208,11 +209,23 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "label4";
             // 
+            // ClearButton
+            // 
+            this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearButton.Location = new System.Drawing.Point(180, 245);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(81, 30);
+            this.ClearButton.TabIndex = 10;
+            this.ClearButton.Text = "Clear";
+            this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click_1);
+            // 
             // BMICalculator
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Assignment_5_1_.Properties.Resources._2e8fe686fcba29aab5059edcb7efc562__leo_the_lions_animated_gifs;
             this.ClientSize = new System.Drawing.Size(302, 433);
+            this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.weightTexBox);
@@ -252,6 +265,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox ResultTextBox;
         private System.Windows.Forms.TextBox ResultInfoTextBox;
+        private System.Windows.Forms.Button ClearButton;
     }
 }
 

@@ -118,6 +118,22 @@ namespace Assignment_5_1_
             {
                 MessageBox.Show("Press OK");
             }
+
+        }
+
+        // CLEAR BUTTON
+        private void ClearButton_Click_1(object sender, EventArgs e)
+        {
+            //clear fields
+            HeightTextBox.Clear();
+            WeightTextBox.Clear();
+            ResultTextBox.Clear();
+            ResultInfoTextBox.Clear();
+
+
+            //enable textboxes 
+            HeightTextBox.Enabled = true;
+            WeightTextBox.Enabled = true;
         }
     }
 }
