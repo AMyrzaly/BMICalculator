@@ -73,6 +73,26 @@ namespace Assignment_5_1_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap c6c43e4101771a77e6e68ce0dea2343b__gado_bull_riders {
+            get {
+                object obj = ResourceManager.GetObject("c6c43e4101771a77e6e68ce0dea2343b--gado-bull-riders", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Human_vs_Animal {
             get {
                 object obj = ResourceManager.GetObject("Human-vs-Animal", resourceCulture);

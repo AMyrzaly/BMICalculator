@@ -28,20 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.SplashFormTimer = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // SplashFormTimer
+            // 
+            this.SplashFormTimer.Enabled = true;
+            this.SplashFormTimer.Interval = 3000;
+            this.SplashFormTimer.Tick += new System.EventHandler(this.SplashFormTimer_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(27, 351);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(281, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Welcome to my BMI calculator!";
             // 
             // SplashForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackgroundImage = global::Assignment_5_1_.Properties.Resources.c6c43e4101771a77e6e68ce0dea2343b__gado_bull_riders;
+            this.ClientSize = new System.Drawing.Size(320, 480);
+            this.ControlBox = false;
+            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashForm";
-            this.Load += new System.EventHandler(this.SplashForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer SplashFormTimer;
+        private System.Windows.Forms.Label label1;
     }
 }

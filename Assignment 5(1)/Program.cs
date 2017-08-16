@@ -8,7 +8,7 @@ using System.Windows.Forms;
  * Name: Abubakir Myrzaly
  * Date: 8/15/2017
  * Description: BMI Calculator
- * Version 0.1 - Created the Project
+ * Version 0.2 - Stated SplashFormFirst
  */
 
 namespace Assignment_5_1_
@@ -23,7 +23,7 @@ namespace Assignment_5_1_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BMICalculator());
+            Application.Run(new SplashForm());
         }
     }
 }

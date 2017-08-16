@@ -136,9 +136,10 @@ namespace Assignment_5_1_
             WeightTextBox.Enabled = true;
         }
 
-        private void BMICalculator_Load(object sender, EventArgs e)
+        //Closing Event
+        private void BMICalculator_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }

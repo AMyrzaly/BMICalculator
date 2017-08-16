@@ -24,9 +24,13 @@ namespace Assignment_5_1_
             InitializeComponent();
         }
 
-        private void SplashForm_Load(object sender, EventArgs e)
+        private void SplashFormTimer_Tick(object sender, EventArgs e)
         {
+            BMICalculator bmicalculator = new BMICalculator();
+            bmicalculator.Show();
+            this.Hide();
 
+            SplashFormTimer.Enabled = false;
         }
     }
 }
