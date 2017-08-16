@@ -135,5 +135,10 @@ namespace Assignment_5_1_
             HeightTextBox.Enabled = true;
             WeightTextBox.Enabled = true;
         }
+
+        private void BMICalculator_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
